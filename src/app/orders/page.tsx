@@ -31,31 +31,32 @@ export const data: Order[] = [
     order:"ORD003",
     status: "Completed",
     lastOrder:"2023-03-10",
-    method: "Stripe"
+    method: "Credit Card"
   },
   {
     order:"ORD004",
     status: "Pending",
     lastOrder:"2023-04-10",
-    method: "Venmo"
+    method: "Cash"
   },
   {
     order:"ORD005",
     status: "Completed",
     lastOrder:"2023-04-10",
-    method: "Venmo"
+    method: "Paypal"
   },{
     order:"ORD006",
     status: "Processing",
     lastOrder:"2023-04-10",
-    method: "Venmo"
+    method: "Visa"
   },
   {
     order:"ORD007",
     status: "Completed",
     lastOrder:"2023-04-10",
     method: "Venmo"
-  },{
+  },
+  {
     order:"ORD008",
     status: "Pending",
     lastOrder:"2023-04-10",
@@ -119,7 +120,7 @@ export const columns: ColumnDef<Order>[] = [
   },
 ];
 
-export default function OrderPage({}: Props) {
+export default function OrderPage({}: Order) {
   return (
     <div className='flex flex-col gap-5 w-full'>
       <PageTitle title='Orders'/>
