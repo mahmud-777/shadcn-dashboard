@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { DataTable } from '@/components/DataTable'
 import React from 'react'

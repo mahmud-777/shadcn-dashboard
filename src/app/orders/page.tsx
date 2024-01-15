@@ -7,14 +7,14 @@ import { cn } from '@/lib/utils'
 
 type Props = {}
 
-export type Payment = {
+export type Order = {
   order: string
   status: string
   lastOrder: string
   method: string
 }
 
-export const data: Payment[] = [
+export const data: Order[] = [
   {
     order:"ORD001",
     status: "Pending",
@@ -88,7 +88,7 @@ export const data: Payment[] = [
 ]
 
  
-export const columns: ColumnDef<Payment>[] = [
+export const columns: ColumnDef<Order>[] = [
   {
     accessorKey: "order",
     header: "Order",

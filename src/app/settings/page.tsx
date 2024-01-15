@@ -46,7 +46,7 @@ export const columns: ColumnDef<Setting>[] = [
   },
 ];
 
-export default function SettingsPage({}: Props) {
+export default function SettingsPage({}: Setting) {
   return (
     <div className='flex flex-col gap-5 w-full'>
       <PageTitle title='Settings'/>
